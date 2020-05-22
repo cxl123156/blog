@@ -59,11 +59,11 @@
 <meta property="og:site_name" content="Xianglin">
 <meta property="og:description" content="MySQL基础组成结构数据库和实例 数据库：物理操作系统文件或其他形式的文件类型的集合。在MySQL数据库中，数据库文件可以是frm，MYD，MYI，ibd结尾的文件。当使用NDB引擎时，数据库的文件可能不是操作系统上的文件，而是存放于内存中的文件，但是定义不变。 实例：MySQL数据库由后台线程以及一个共享内存区组成。共享内存可以被运行的后台线程所共享。数据库实例才是真正用于操作数据库文件的。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;17&#x2F;mysql-1&#x2F;mysql_achitecture.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;17&#x2F;mysql-1&#x2F;mysql_achitecture.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;17&#x2F;mysql-1&#x2F;mysqlrunstep.png">
-<meta property="og:updated_time" content="2020-05-22T15:40:31.941Z">
+<meta property="og:updated_time" content="2020-05-22T16:36:34.809Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;17&#x2F;mysql-1&#x2F;mysql_achitecture.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;17&#x2F;mysql-1&#x2F;mysql_achitecture.jpg">
 
 <link rel="canonical" href="http://yoursite.com/2020/05/17/mysql-1/">
 
@@ -213,7 +213,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-22 23:40:31" itemprop="dateModified" datetime="2020-05-22T23:40:31+08:00">2020-05-22</time>
+                <time title="修改时间：2020-05-23 00:36:34" itemprop="dateModified" datetime="2020-05-23T00:36:34+08:00">2020-05-23</time>
               </span>
 
           
@@ -233,7 +233,7 @@
 </ul>
 <p>​        直白来讲，数据库就是一个个文件组成（二进制文件）的，要对这些文件执行SELECT、INSERT、DELETE等操作需要通过数据库实例来完成。</p>
 <h2 id="数据库体系结构"><a href="#数据库体系结构" class="headerlink" title="数据库体系结构"></a>数据库体系结构</h2><p>​        MySQL由客户端，连接池组件（Connection Pool）、缓冲组件（Caches&amp;Buffer）、查询分析器（Parser）、SQL优化器（Optimizer）、插件式存储引擎（Pluggable Storage Engines）、SQL接口组件（SQL Interface），管理服务和工具组件（Management Services &amp; Utilities），物理文件（File System）构成。</p>
-<img src="/2020/05/17/mysql-1/mysql_achitecture.png" class="">
+<img src="/2020/05/17/mysql-1/mysql_achitecture.jpg" class="">
 
 <p>图中的Connectors为不同语言实现的与MySQL交互的连接器用来建立连接执行SQL</p>
 <p>当一条查询语句的执行过程如下图所示</p>
