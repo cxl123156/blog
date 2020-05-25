@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <link rel="alternate" href="/atom.xml" title="Xianglin" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="DustEater" type="application/atom+xml">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -56,7 +56,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java虚拟机-类加载">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;28&#x2F;javaVM-ClassLoader&#x2F;index.html">
-<meta property="og:site_name" content="Xianglin">
+<meta property="og:site_name" content="DustEater">
 <meta property="og:description" content="一转眼2020年了，最近春节期间瘟疫肆虐，在家猫着无聊再学习一波JVM相关知识做一下笔记，争取年后能够成功跳槽。 在Java中类的加载是在程序运行中进行的，因此会对程序运行产生一些性能开销，但是增加了程序的灵活性。 类的加载是指将类的.class文件的二进制数据读入到内存中，将其放在运行时数据区的方法区中，然后在内存中创建一个java.lang.Class对象用来封装类在方法区内的数据。（规范并未">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2020-02-02T16:12:29.519Z">
@@ -76,10 +76,19 @@
   };
 </script>
 
-  <title>Java虚拟机-类加载 | Xianglin</title>
+  <title>Java虚拟机-类加载 | DustEater</title>
   
 
 
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ee18b7165e1237b6f0c9a31d73e30c4b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -120,7 +129,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Xianglin</span>
+        <span class="site-title">DustEater</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -184,12 +193,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Xianglin chen">
+      <meta itemprop="name" content="DustEater">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xianglin">
+      <meta itemprop="name" content="DustEater">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -313,9 +322,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="site-author-image" itemprop="image" alt="Xianglin chen"
+  <img class="site-author-image" itemprop="image" alt="DustEater"
     src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">Xianglin chen</p>
+  <p class="site-author-name" itemprop="name">DustEater</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -367,7 +376,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Xianglin chen</span>
+  <span class="author" itemprop="copyrightHolder">DustEater</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
   </div>
@@ -394,6 +403,8 @@
   </div>
 
   
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>

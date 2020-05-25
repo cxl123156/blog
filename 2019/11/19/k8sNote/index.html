@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <link rel="alternate" href="/atom.xml" title="Xianglin" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="DustEater" type="application/atom+xml">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -56,7 +56,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kubernetes学习记录">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;19&#x2F;k8sNote&#x2F;index.html">
-<meta property="og:site_name" content="Xianglin">
+<meta property="og:site_name" content="DustEater">
 <meta property="og:description" content="高可用集群数量最好大于等于3的奇数 Pod：k8s基础单元 内部包含多个容器 ##K8S整体组成部分： kubelet 直接和容器引擎交互 控制容器生命周期 kube-proxy 负责写入规则至iptables,IPVS实现服务映射访问 APIServer：所有服务访问的统一入口 ControllerManager 维持副本期望数目 Scheduler：负责接受任务，选择合适结点进行分配任务 ET">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-18T12:55:12.833Z">
@@ -76,10 +76,19 @@
   };
 </script>
 
-  <title>Kubernetes学习记录 | Xianglin</title>
+  <title>Kubernetes学习记录 | DustEater</title>
   
 
 
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ee18b7165e1237b6f0c9a31d73e30c4b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -120,7 +129,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Xianglin</span>
+        <span class="site-title">DustEater</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -184,12 +193,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Xianglin chen">
+      <meta itemprop="name" content="DustEater">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xianglin">
+      <meta itemprop="name" content="DustEater">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -317,9 +326,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="site-author-image" itemprop="image" alt="Xianglin chen"
+  <img class="site-author-image" itemprop="image" alt="DustEater"
     src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">Xianglin chen</p>
+  <p class="site-author-name" itemprop="name">DustEater</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -371,7 +380,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Xianglin chen</span>
+  <span class="author" itemprop="copyrightHolder">DustEater</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
   </div>
@@ -398,6 +407,8 @@
   </div>
 
   
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
