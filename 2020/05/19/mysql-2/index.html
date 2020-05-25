@@ -62,7 +62,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;19&#x2F;mysql-2&#x2F;B+Tree.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;19&#x2F;mysql-2&#x2F;clusterIndex.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;19&#x2F;mysql-2&#x2F;showIndex.png">
-<meta property="og:updated_time" content="2020-05-23T07:59:25.928Z">
+<meta property="og:updated_time" content="2020-05-25T13:25:00.604Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;05&#x2F;19&#x2F;mysql-2&#x2F;B+Tree.jpg">
 
@@ -223,7 +223,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-23 15:59:25" itemprop="dateModified" datetime="2020-05-23T15:59:25+08:00">2020-05-23</time>
+                <time title="修改时间：2020-05-25 21:25:00" itemprop="dateModified" datetime="2020-05-25T21:25:00+08:00">2020-05-25</time>
               </span>
 
           
@@ -246,6 +246,8 @@
 </ul>
 <p>​        其中哈希索引是自适应的，InnoDB引擎会根据表的使用情况自动为表生成哈希索引，不能人为干预是否在一张表中生存哈希索引。</p>
 <p>​        B+树索引是传统意义上的索引，这是目前关系型数据库中查找最为常用和最有效的索引，这里就着重记录下B+树相关的内容。</p>
+<a id="more"></a>
+
 <h2 id="B-树"><a href="#B-树" class="headerlink" title="B+树"></a>B+树</h2><p>​        根据书中的说法，B+树由B树和索引顺序访问方法（ISAM）演化而来，B+树是为磁盘或其他直接存储辅助设备设计的一种平衡查找书。在B+树中，所有记录都是按键值的大小顺序存放在同一层的叶子节点上，由各叶子结点指针进行连接。叶子节点为双向链表。</p>
 <p>​        通俗一点来讲B+树不是一个二叉树，它名字中的B代表的是（Balance平衡）的意思。B+树实际是一个多叉树，它由B树演变而来，主要目的是为了在磁盘中提高数据的查找效率。那么它是如何提高查找效率的呢？</p>
 <p>​        首先MySQL InnoDB引擎存储的数据实际是存在磁盘上的文件，磁盘IO是一个比较耗时的操作，而当数据量比较大的时候如果查询算法效率不够高的话，查询一条记录就导致需要频繁读取磁盘导致查询很慢。B+树的以下几个特点解决了这个问题。（当然B树也可以解决这个问题，但是B+树对B树进行了优化所以它更加适用于此场景）</p>
